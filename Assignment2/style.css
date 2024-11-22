@@ -1,0 +1,490 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting a large height for the body to enable scrolling effects */
+body {
+    height: 300vh;
+}
+
+/* Defining height for the main content area */
+main {
+    height: 275vh;
+}
+
+/* Styling the logo container */
+.logo {
+    position: relative;
+    left: 5vw; /* Position the logo 5% from the left viewport width */
+}
+
+/* Styling the logo image */
+.logo img {
+    width: 300px;
+    height: 120px;  
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+/* Add a slight scaling effect when hovering over the logo */
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Styling the search icon */
+.search-icon {
+    width: 30px;
+    color: #FEEBD0;
+}
+
+/* Styling the navigation bar */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #FFB400, #FF6F61); /* Gradient background */
+    position: fixed; /* Fixed position for sticky navigation */
+    width: 100%;
+    z-index: 1000; /* Ensures the nav stays above other elements */
+}
+
+/* Background section with a gradient */
+.bg {
+    height: 70vh;
+    background: linear-gradient(135deg, #72498E, #3F000B);
+}
+
+/* Styling the menu section */
+.menu {
+    text-align: center; 
+    justify-content: center;
+    display: flex;
+    background-color: #3F000B;
+    height: 10vh;
+}
+
+/* Styling menu items */
+.menu-elements {
+    list-style: none; /* Remove bullet points */
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-evenly; /* Even spacing for menu items */
+    width: 60vw; /* Menu occupies 60% of the viewport width */
+    font-size: 25px;
+    font-weight: bold;
+    color: #FEEBD0;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Change color and scale menu items on hover */
+.menu-elements li:hover {
+    color: #FFB400;
+    transform: scale(1.1);  
+}
+
+/* Add underline effect on hover for menu items */
+.menu-elements li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #FFB400;
+    transition: width 0.3s ease;  
+}
+
+.menu-elements li:hover::after {
+    width: 100%; /* Full width underline */
+}
+
+/* Styling the main photo */
+.main-photo {
+    width: 40vw;
+    height: 30vh;
+    position: relative;
+    left: 5%;
+    top: 26vh;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Scale and add shadow effect on hover for the main photo */
+.main-photo:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling background text animations */
+.bg-text {
+    opacity: 0;
+    transform: translateY(20px); /* Initial state for animation */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    margin: 20px 0;
+    font-size: 3.5rem;
+    text-align: center;
+    left: 20vw;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%; 
+    font-family: "Oswald", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* Show background text when visible */
+.show {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+/* Styling for the people's favorite section */
+.people-fav {
+    height: 100vh;
+    background-color: rgb(233, 233, 233);
+    color: #3F000B;
+}
+
+/* Card container styling */
+.candy-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Enable wrapping for cards */
+    padding: 30px 5%;
+    background-color: #f9f9f9;
+}
+
+/* Individual card styling */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; 
+}
+
+/* Card image styling */
+.card img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Card title styling */
+.card h3 {
+    margin: 15px 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Card text styling */
+.card p {
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Hover effects for cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Change card title color on hover */
+.card h3:hover {
+    color: #FFB400; 
+    text-decoration: underline;
+}
+
+/* Add scaling effect for card images on hover */
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* Apply fade-in animations for cards */
+.heading h2, .card {
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: all 0.6s ease-out;
+}
+
+.heading h2.visible, .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keyframe animation for fading in cards */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Alternating animations for even and odd cards */
+.candy-cards .card:nth-child(even) {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.candy-cards .card:nth-child(odd) {
+    animation: fadeIn 1.0s ease-out forwards;
+}
+
+/* Styling the heading */
+.heading {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 55px;
+    font-family: "Oswald", sans-serif;
+}
+
+/* Styling for the "see more" button */
+.see-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.see-more a {
+    font-size: 1.2rem;
+    color: #FFB400;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #FFB400;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: 50px;
+}
+
+.see-more a:hover {
+    background-color: #FFB400;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Rating stars styling */
+.rating {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #FFB400;
+}
+
+.star {
+    margin: 0 2px;
+}
+
+.star:hover {
+    color: #FFD700; /* Highlight stars on hover */
+}
+
+/* Styling the video section */
+.video {
+    display: flex;     
+    flex-direction: row;   
+    align-items: center;          
+    gap: 20px;                   
+    margin: 20px auto;             
+    max-width: 900px;              
+}
+
+.trust-video iframe {
+    width: 75vh;
+    max-width: 584px;
+    height: 356px;
+    border-radius: 10px;
+}
+
+/* Information box beside video */
+.trust-info {
+    flex: 1;                  
+    font-size: 1.1rem;          
+    line-height: 1.6;              
+    text-align: left;              
+    padding: 10px;                
+    background-color: #f9f9f9;     
+    border-radius: 10px;          
+    box-shadow: 0 0 10px rgba(0, 0, 
+
+    0, 0, 0, 0.1);
+    font-family: "Kanit", sans-serif;
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 768px) {
+    .video {
+        flex-direction: column; /* Stack video and info vertically */
+        gap: 10px; /* Reduced spacing for smaller screens */
+    }
+    
+    .trust-video iframe {
+        height: 250px; /* Adjust iframe height for smaller screens */
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #72498E;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    height: 25vh;
+}
+
+/* Footer container layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #F1F0CC;
+    color: #fff;
+    flex-wrap: wrap; /* Enable wrapping for small screens */
+}
+
+/* Newsletter section within the footer */
+.newsletter {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #72498E;
+    text-align: center;
+}
+
+/* Styling the newsletter form */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    padding: 10px 15px;
+    background-color: #0077cc;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* Button hover effect */
+.newsletter-form button:hover {
+    background-color: #005fa3;
+}
+
+/* Footer links */
+.footer-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+    font-family: "Oswald", sans-serif;
+}
+
+.footer-links a {
+    color: #72498E;
+    font-size: 25px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+    color: #0077cc;
+}
+
+/* Social media section */
+.social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+.social-media a {
+    color: #72498E;
+    font-size: 25px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.social-media a:hover {
+    color: #0077cc;
+}
+
+/* Copyright Section */
+.copyright {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+}
+
+.copyright span {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .newsletter, .footer-links, .social-media {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+        

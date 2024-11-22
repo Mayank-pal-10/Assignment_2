@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the document type as HTML5 -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <title>Assignment2</title> <!-- Title displayed on the browser tab -->
+    
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../Assignment2/style.css">    
+    <!-- Link to the external JavaScript file -->
+    <script src="../Assignment2/script.js"></script>
+
+    <!-- Preconnect for optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to Google Fonts for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header class="nav">
+        <div class="logo">
+            <!-- Logo image for the website -->
+            <img src="../Assignment2/img/the-hershey-company-logo-color-header.png" alt="Hershey Company Logo">
+        </div>
+        <div class="menu">
+            <!-- Navigation menu with list items -->
+            <ul class="menu-elements">
+                <li>About us</li>
+                <li>Brands</li>
+                <li>Innovation</li>
+                <li>Sustainability</li>
+                <li>Ingredients</li>
+                <!-- Search icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="search-icon" aria-label="Search Icon">
+                    <path fill="#feebd0" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                </svg>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero section with background image and text -->
+        <div class="bg">
+            <article>
+                <!-- Main image for the blog -->
+                <img src="../Assignment2/img/blog-hero-kit-kat-vanilla.jpg" alt="Kit Kat Vanilla Blog Image" class="main-photo">
+            </article>
+            <aside class="bg-text">
+                <!-- Hidden promotional text -->
+                <p class="hidden-text">Introducing our new</p>
+                <p class="hidden-text">Marvel</p>
+                <div class="see-more">
+                    <!-- Link to more details -->
+                    <a href="/more-candies.html">See More</a>
+                </div>                
+            </aside>
+        </div>
+
+        <!-- Section for displaying popular candy cards -->
+        <div class="people-fav">
+            <div class="heading">
+                <p>People's Favourite</p> <!-- Section heading -->
+            </div>
+            <div class="candy-cards">
+                <!-- Individual candy card -->
+                <div class="card">
+                    <img src="../Assignment2/img/candy1.png" alt="Reese's Peanut Butter Cups">
+                    <h3>Reese's Peanut Butter Cups</h3>
+                    <p>"Absolutely delicious! Best peanut butter and chocolate combo." - Emily</p>
+                    <!-- Star rating -->
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span> <!-- Empty star -->
+                    </div>
+                </div>
+                <!-- Repeated cards for other candies -->
+                <div class="card">
+                    <img src="../Assignment2/img/candy2.webp" alt="Reese's Peanut Butter Cups">
+                    <h3>Reese's Peanut Butter Cups</h3>
+                    <p>"Absolutely delicious! Best peanut butter and chocolate combo." - Emily</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assignment2/img/candy3.webp" alt="Reese's Peanut Butter Cups">
+                    <h3>Reese's Peanut Butter Cups</h3>
+                    <p>"Absolutely delicious! Best peanut butter and chocolate combo." - Emily</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assignment2/img/candy4.webp" alt="Reese's Peanut Butter Cups">
+                    <h3>Reese's Peanut Butter Cups</h3>
+                    <p>"Absolutely delicious! Best peanut butter and chocolate combo." - Emily</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section for trust information and video -->
+            <div class="video">
+                <article class="trust-video">
+                    <!-- Embedded YouTube video -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-TNec4yqvjs?si=Qfd9plwfuqFUs6_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </article>
+                <aside class="trust-info">
+                    <!-- Description of the Hershey Trust -->
+                    <p>The Hershey Trust Company is an American trust company based in Hershey, Pennsylvania, established in 1905. Its sole business is the management of several charitable trusts endowed by Milton S. Hershey. The largest is the Milton Hershey School Trust, which has $17.4 billion of assets as of 2021, including Hershey Entertainment and Resorts Company and a controlling stake in The Hershey Company.</p>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Newsletter subscription form -->
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form class="newsletter-form" action="/submit-form-endpoint" method="POST">
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="email" placeholder="Your Email" name="email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <!-- Footer links -->
+            <div class="footer-links">
+                <a href="#careers">Careers</a>
+                <a href="#contact">Contact</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <!-- Social media links -->
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+            <!-- Footer logo -->
+            <div class="footer-logo">
+                <img src="../Assignment2/img/the-hershey-company-logo-color-header.png" alt="Hershey Logo">
+            </div>
+        </div>
+        <!-- Copyright notice -->
+        <div class="copyright">
+            <span>© <span class="footerYear">2024</span> THE HERSHEY COMPANY. ALL RIGHTS RESERVED.</span>
+        </div>
+    </footer>
+</body>
+</html>
